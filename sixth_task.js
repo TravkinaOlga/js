@@ -8,4 +8,4 @@ let flag = true;
 if (n % x != 0|| n % y != 0) {
     flag = false;
 }
-alert(`n = ${n}, x = ${x}, y = ${y} => ${flag}`);
+console.log(`n = ${n}, x = ${x}, y = ${y} => ${flag}`);
