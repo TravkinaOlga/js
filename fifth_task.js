@@ -1,16 +1,16 @@
 'use strict'
 
-let n = 12;
-let number;
+let num = 12;
+let personal_number;
 
 do {
-    number = prompt('Введите число', 0);
-    if (number === '' || number === null) {
+    personal_number = prompt('Введите число, чтобы угадать', 0);
+    if (personal_number === '' || personal_number === null) {
         continue;
-    } else if (number > n) {
+    } else if (personal_number > num) {
         console.log('Ваше число больше :с');
-    } else if (number < n) {
+    } else if (personal_number < num) {
         console.log('Ваше число меньше :(');
     }
-} while (number != n);
+} while (personal_number != num);
 console.log('Угадано :з');

@@ -1,19 +1,19 @@
 'use strict';
 
 let number;
-let i = 0;
+let j = 0;
 
 do {
-    number = prompt('Введите число', 0);
+    number = prompt('Введите число!', 0);
 } while (isNaN(number) || number === '');
 
-while (i <= number) {
-    if  (i % 5 === 0 && i !== 0) {
-        console.log(`"${i} fizz buzz"`);
-    } else if (i % 2 === 0) {
-        console.log(`"${i} buzz"`);
+while (j <= number) {
+    if  (j % 5 === 0 && j !== 0) {
+        console.log(`"${j} fizz buzz"`);
+    } else if (j % 2 === 0) {
+        console.log(`"${j} buzz"`);
     } else {
-        console.log(`"${i} fizz"`);
+        console.log(`"${j} fizz"`);
     }
-    i++;
+    j++;
 }
