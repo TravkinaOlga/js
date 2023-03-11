@@ -1,20 +1,21 @@
 'use strict'
 
-//let layers = prompt('Сколько слоёв в Вашей ёлке?', 0);
-let layers = 13;
+let layers = prompt('Сколько слоёв в Вашей ёлке?', 0);
+// let layers = 13;
+
+let array = [];
 
 let z = '*';
 let r = '#';
-let index;
+// let index;
 for (let l = 0; layers != l - 1; l++) {
     if (l === 0) {
-        index = '>';
-    } else if (l === layers) {
-        index = '||';
+        array.push('>');
     } else if (l % 2 != 0) {
-        index = z.repeat(l);
+        array.push(z.repeat(l));
     } else {
-        index = r.repeat(l);
+        array.push(r.repeat(l));
     }
-    process.stdout.write(`${index}\n`);
 }
+array.push('||');
+console.log(array.join('\n'))
