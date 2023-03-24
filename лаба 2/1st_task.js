@@ -2,11 +2,11 @@
 
 function convertSpeed(speed, si) {
     if (si === 'toMS') {
-        console.log(`convertSpeed(${speed}, ${si}) -> '${speed / 3.6} м/с'`);
+        return `${speed / 3.6} м/с`;
     } else {
-        console.log(`convertSpeed(${speed}, '${si}') -> '${speed * 3.6} км/ч'`)
+        return `${speed * 3.6} км/ч`;
     }
 }
-let a = 36;
-let b = 'toKMH';
-convertSpeed(a, b);
+let a = prompt('Введите скорость', 0);
+let b = prompt('Введите единицы измерения вида toKMH или toMS', '');
+console.log(`convertSpeed(${a}, '${b}') ->` + ` ` + `${convertSpeed(a, b)}`)
