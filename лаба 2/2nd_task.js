@@ -3,10 +3,10 @@
 function absValue(number) {
     if (number < 0) {
         number = -number;
-        console.log(`absValue(${-number}) -> ${number}`);
+        return number;
     } else
-    console.log(`absValue(${number}) -> ${number}`);
+        return number;
 }
 
 let m = prompt('Введите число и узнайте его модуль!', 0);
-absValue(m);
+console.log(`absValue(${m}) ->` + ` ` + `${absValue(m)}`)
